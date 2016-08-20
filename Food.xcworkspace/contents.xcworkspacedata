@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PresentationLayer/PresentationLayer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PersistenceLayer/PersistenceLayer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BusinessLayer/BusinessLayer.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Presentation/Presentation.xcodeproj">
    </FileRef>
 </Workspace>
