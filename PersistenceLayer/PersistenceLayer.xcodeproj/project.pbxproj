@@ -10,6 +10,14 @@
 		513212471D68416C0063A87A /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 513212461D68416C0063A87A /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5132124D1D68416C0063A87A /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513212411D68416C0063A87A /* PersistenceLayer.framework */; };
 		513212541D68416C0063A87A /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 513212531D68416C0063A87A /* PersistenceLayerTests.m */; };
+		5132129D1D6851FE0063A87A /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 5132129B1D6851FE0063A87A /* Events.h */; };
+		5132129E1D6851FE0063A87A /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132129C1D6851FE0063A87A /* Events.m */; };
+		513212A11D68520E0063A87A /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5132129F1D68520E0063A87A /* Schedule.h */; };
+		513212A21D68520E0063A87A /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 513212A01D68520E0063A87A /* Schedule.m */; };
+		513212AD1D68547E0063A87A /* EventsDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 513212AB1D68547E0063A87A /* EventsDao.h */; };
+		513212AE1D68547E0063A87A /* EventsDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 513212AC1D68547E0063A87A /* EventsDao.m */; };
+		513212B11D6854980063A87A /* ScheduleDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 513212AF1D6854980063A87A /* ScheduleDao.h */; };
+		513212B21D6854980063A87A /* ScheduleDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 513212B01D6854980063A87A /* ScheduleDao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		5132124C1D68416C0063A87A /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		513212521D68416C0063A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513212531D68416C0063A87A /* PersistenceLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayerTests.m; sourceTree = "<group>"; };
+		5132129B1D6851FE0063A87A /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		5132129C1D6851FE0063A87A /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		5132129F1D68520E0063A87A /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		513212A01D68520E0063A87A /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		513212AB1D68547E0063A87A /* EventsDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDao.h; sourceTree = "<group>"; };
+		513212AC1D68547E0063A87A /* EventsDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDao.m; sourceTree = "<group>"; };
+		513212AF1D6854980063A87A /* ScheduleDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDao.h; sourceTree = "<group>"; };
+		513212B01D6854980063A87A /* ScheduleDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +88,14 @@
 			isa = PBXGroup;
 			children = (
 				513212461D68416C0063A87A /* PersistenceLayer.h */,
+				5132129B1D6851FE0063A87A /* Events.h */,
+				5132129C1D6851FE0063A87A /* Events.m */,
+				513212AB1D68547E0063A87A /* EventsDao.h */,
+				513212AC1D68547E0063A87A /* EventsDao.m */,
+				5132129F1D68520E0063A87A /* Schedule.h */,
+				513212A01D68520E0063A87A /* Schedule.m */,
+				513212AF1D6854980063A87A /* ScheduleDao.h */,
+				513212B01D6854980063A87A /* ScheduleDao.m */,
 				513212441D68416C0063A87A /* Supporting Files */,
 			);
 			path = PersistenceLayer;
@@ -110,6 +134,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				513212471D68416C0063A87A /* PersistenceLayer.h in Headers */,
+				5132129D1D6851FE0063A87A /* Events.h in Headers */,
+				513212AD1D68547E0063A87A /* EventsDao.h in Headers */,
+				513212A11D68520E0063A87A /* Schedule.h in Headers */,
+				513212B11D6854980063A87A /* ScheduleDao.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513212A21D68520E0063A87A /* Schedule.m in Sources */,
+				513212B21D6854980063A87A /* ScheduleDao.m in Sources */,
+				513212AE1D68547E0063A87A /* EventsDao.m in Sources */,
+				5132129E1D6851FE0063A87A /* Events.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

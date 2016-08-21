@@ -14,8 +14,11 @@
 		5132127D1D6843600063A87A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132127C1D6843600063A87A /* Images.xcassets */; };
 		513212801D6843600063A87A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5132127E1D6843600063A87A /* LaunchScreen.xib */; };
 		5132128C1D6843600063A87A /* PresentationLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132128B1D6843600063A87A /* PresentationLayerTests.m */; };
-		513212971D6843710063A87A /* BusinessLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513212951D6843710063A87A /* BusinessLayer.framework */; };
-		513212981D6843710063A87A /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513212961D6843710063A87A /* PersistenceLayer.framework */; };
+		519A33E91D6987B800CBD6C9 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 519A33E71D6987B800CBD6C9 /* create_load.sql */; };
+		519A33EA1D6987B800CBD6C9 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 519A33E81D6987B800CBD6C9 /* DBConfig.plist */; };
+		519A33ED1D6987FA00CBD6C9 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 519A33EC1D6987FA00CBD6C9 /* DBHelper.m */; };
+		519A33F51D698C5A00CBD6C9 /* BusinessLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519A33F31D698C5A00CBD6C9 /* BusinessLayer.framework */; };
+		519A33F61D698C5A00CBD6C9 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519A33F41D698C5A00CBD6C9 /* PersistenceLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,14 @@
 		5132128B1D6843600063A87A /* PresentationLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationLayerTests.m; sourceTree = "<group>"; };
 		513212951D6843710063A87A /* BusinessLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLayer.framework; path = "../BusinessLayer/build/Debug-iphoneos/BusinessLayer.framework"; sourceTree = "<group>"; };
 		513212961D6843710063A87A /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
+		513212991D684AAC0063A87A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		519A33E71D6987B800CBD6C9 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		519A33E81D6987B800CBD6C9 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		519A33EB1D6987FA00CBD6C9 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		519A33EC1D6987FA00CBD6C9 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		519A33F01D698A5400CBD6C9 /* PersistenceLayer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PersistenceLayer-Prefix.pch"; path = "PresentationLayerTests/PersistenceLayer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		519A33F31D698C5A00CBD6C9 /* BusinessLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLayer.framework; path = "../BusinessLayer/build/Debug-iphoneos/BusinessLayer.framework"; sourceTree = "<group>"; };
+		519A33F41D698C5A00CBD6C9 /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513212971D6843710063A87A /* BusinessLayer.framework in Frameworks */,
-				513212981D6843710063A87A /* PersistenceLayer.framework in Frameworks */,
+				519A33F51D698C5A00CBD6C9 /* BusinessLayer.framework in Frameworks */,
+				519A33F61D698C5A00CBD6C9 /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +80,12 @@
 		513212631D6843600063A87A = {
 			isa = PBXGroup;
 			children = (
+				519A33F31D698C5A00CBD6C9 /* BusinessLayer.framework */,
+				519A33F41D698C5A00CBD6C9 /* PersistenceLayer.framework */,
+				513212991D684AAC0063A87A /* libsqlite3.dylib */,
 				513212951D6843710063A87A /* BusinessLayer.framework */,
 				513212961D6843710063A87A /* PersistenceLayer.framework */,
+				519A33E61D6987B800CBD6C9 /* DBFile */,
 				5132126E1D6843600063A87A /* PresentationLayer */,
 				513212881D6843600063A87A /* PresentationLayerTests */,
 				5132126D1D6843600063A87A /* Products */,
@@ -91,6 +106,8 @@
 			children = (
 				513212731D6843600063A87A /* AppDelegate.h */,
 				513212741D6843600063A87A /* AppDelegate.m */,
+				519A33EB1D6987FA00CBD6C9 /* DBHelper.h */,
+				519A33EC1D6987FA00CBD6C9 /* DBHelper.m */,
 				513212761D6843600063A87A /* ViewController.h */,
 				513212771D6843600063A87A /* ViewController.m */,
 				513212791D6843600063A87A /* Main.storyboard */,
@@ -104,6 +121,7 @@
 		5132126F1D6843600063A87A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				519A33F01D698A5400CBD6C9 /* PersistenceLayer-Prefix.pch */,
 				513212701D6843600063A87A /* Info.plist */,
 				513212711D6843600063A87A /* main.m */,
 			);
@@ -125,6 +143,16 @@
 				5132128A1D6843600063A87A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		519A33E61D6987B800CBD6C9 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				519A33E71D6987B800CBD6C9 /* create_load.sql */,
+				519A33E81D6987B800CBD6C9 /* DBConfig.plist */,
+			);
+			name = DBFile;
+			path = PresentationLayer/DBFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519A33EA1D6987B800CBD6C9 /* DBConfig.plist in Resources */,
+				519A33E91D6987B800CBD6C9 /* create_load.sql in Resources */,
 				5132127B1D6843600063A87A /* Main.storyboard in Resources */,
 				513212801D6843600063A87A /* LaunchScreen.xib in Resources */,
 				5132127D1D6843600063A87A /* Images.xcassets in Resources */,
@@ -230,6 +260,7 @@
 				513212781D6843600063A87A /* ViewController.m in Sources */,
 				513212751D6843600063A87A /* AppDelegate.m in Sources */,
 				513212721D6843600063A87A /* main.m in Sources */,
+				519A33ED1D6987FA00CBD6C9 /* DBHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +386,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/lanyer/Desktop/FoodApp/BusinessLayer/build/Debug-iphoneos",
+					"/Users/lanyer/Desktop/FoodApp/PersistenceLayer/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = PresentationLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,7 +401,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/lanyer/Desktop/FoodApp/BusinessLayer/build/Debug-iphoneos",
+					"/Users/lanyer/Desktop/FoodApp/PersistenceLayer/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = PresentationLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +465,7 @@
 				513212911D6843600063A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		513212921D6843600063A87A /* Build configuration list for PBXNativeTarget "PresentationLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +474,7 @@
 				513212941D6843600063A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
